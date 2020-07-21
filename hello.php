@@ -7,6 +7,8 @@
  * Description:
  */
 
-echo "dd";
-echo "dsdsssds";
-echo "fnsdjajdc js";
+echo '菜鸟教程：www.runoob.com';
+echo '菜鸟教程：www.runoob.com';
+echo '菜鸟教程：www.runoob.com';
+echo "hjdshhs";
+echo "hjdshhs";
