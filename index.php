@@ -20,7 +20,6 @@ foreach ($formList as $questionId=>$questionInfo){
         $optionAllVote+=$vote;
     }
 
-
     foreach ( $options as $optionId=>$optionInfo){
 
         $option=&$options[$optionId];
@@ -31,20 +30,17 @@ foreach ($formList as $questionId=>$questionInfo){
         $process=number_format($vote/$optionAllVote,2);
 
 //        添加票数字段
-        $option['poll']=$vote;
+        $option['vote']=$vote;
 //        添加票数占比字段
         $option['process']=$process;
         //添加票数占比文本字段
         $option['process_text']=(string)($process*100)."%";
-
-
-
-        unset($option);
-
     }
-    unset($options);
 
+    print_r($option);
+//    unset($option);
 }
+unset($options);
 
-print_r($formList);
+//print_r($formList);
 
